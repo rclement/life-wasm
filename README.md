@@ -1,4 +1,8 @@
-# Life!
+# Life WASM
+
+Conway's Game of Life using Rust and WebAssembly.
+
+Personal implementation of the [Rust WASM book](https://rustwasm.github.io/book/).
 
 ## Setup
 
