@@ -13,8 +13,12 @@ branches:
   only:
     - master
 
+addons:
+  firefox: latest
+  chrome: stable
+
 install:
-  - ! cargo install wasm-pack
+  - cargo install wasm-pack || true
   - (cd www && npm install)
 
 script:
@@ -23,7 +27,7 @@ script:
   - (cd www && npm link life-wasm)
   - (cd www && npm run build)
   - cargo test
-  # - wasm-pack test --chrome --firefox --headless
+  - wasm-pack test --chrome --firefox --headless
 
 deploy:
   provider: pages
