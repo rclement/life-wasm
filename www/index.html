@@ -4,35 +4,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Life!</title>
-    <style>
-      body {
-        background-color: #000000;
-        color: #ffffff;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
   </head>
   <body>
-    <span>
-      <button id="clear">clear</button>
-      <button id="play-pause">play</button>
-      <button id="randomize">randomize</button>
-    </span>
-    <span>
-      Size:
-      <input id="width-input" type="number" min="4" max="128" step="1" value="64">
-      x
-      <input id="height-input" type="number" min="4" max="128" step="1" value="64">
-    </span>
-    <canvas id="life-canvas"></canvas>
+    <section class="hero is-fullheight is-black">
+      <div class="hero-head"/>
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Life!</h1>
+          <h6 class="subtitle">Rust + WebAssembly = 💥</h6>
+
+          <div class="content">
+            <button id="clear" class="button is-warning">clear</button>
+            <button id="play-pause" class="button is-primary">play</button>
+            <button id="randomize" class="button is-danger">randomize</button>
+          </div>
+
+          <div class="content">
+            <div class="field has-addons has-addons-centered">
+              <p class="control">
+                <input id="width-input" class="input" type="number" min="4" max="128" step="1" value="64">
+              </p>
+              <p class="control">
+                  <a class="button is-static">Rows</a>
+              </p>
+            </div>
+            <div class="field has-addons has-addons-centered">
+              <p class="control">
+                <input id="height-input" class="input" type="number" min="4" max="128" step="1" value="64">
+              </p>
+              <p class="control">
+                <a class="button is-static">Columns</a>
+              </p>
+            </div>
+          </div>
+
+          <canvas id="life-canvas"></canvas>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <div class="content has-text-centered">
+          <p>Copyright © 2018 - present, Romain Clement</p>
+        </div>
+      </div>
+    </section>
+
     <script src="./bootstrap.js"></script>
   </body>
 </html>

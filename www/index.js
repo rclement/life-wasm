@@ -1,5 +1,6 @@
 import { Universe, Cell } from "life-wasm";
 import { memory } from "life-wasm/life_wasm_bg";
+import Bulma from "bulma";
 
 const playPauseButton = document.getElementById("play-pause");
 const randomizeButton = document.getElementById("randomize");
