@@ -18,7 +18,7 @@ addons:
   chrome: stable
 
 install:
-  - cargo install wasm-pack || true
+  - cargo install wasm-pack || true
   - (cd www && npm install)
 
 script:
