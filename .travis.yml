@@ -2,7 +2,7 @@ language: rust
 rust:
   - "stable"
 
-node_js: "10"
+node_js: "11"
 
 cache:
   cargo: true
