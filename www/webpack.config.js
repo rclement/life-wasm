@@ -23,6 +23,6 @@ module.exports = {
   },
 
   plugins: [
-    new CopyWebpackPlugin(["index.html", ".nojekyll"])
+    new CopyWebpackPlugin(["index.html", ".nojekyll", "CNAME"])
   ],
 };
